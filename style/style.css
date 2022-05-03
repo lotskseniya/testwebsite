@@ -567,11 +567,11 @@ section {
 
 .gallery {
   background: linear-gradient(347deg, rgba(243, 190, 218, 0.604826) 8%, rgba(239, 226, 243, 0.4) 53%, rgba(208, 201, 242, 0.5) 96%);
-  padding-bottom: 80px;
+  padding: 0 0 80px 56px;
 }
 
 .gallery .gallery-wrap {
-  width: 1300px;
+  width: 90%;
   height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -597,11 +597,12 @@ section {
 }
 
 .gallery .gallery-wrap .autoplay div .autoplay-img {
-  max-width: 70%;
+  max-width: 400px;
+  min-width: 70px;
 }
 
 .slick-list {
-  width: 1300px;
+  max-width: 1000px;
 }
 
 .slick-track {
@@ -619,7 +620,7 @@ section {
   width: 36px;
   border-radius: 12%;
   position: relative;
-  margin-left: 30px;
+  margin: 0 5px;
   background-color: #4754EB;
   border: none;
 }

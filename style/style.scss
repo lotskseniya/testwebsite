@@ -538,7 +538,7 @@ section {
     padding-bottom: 80px;
 
     .gallery-wrap {
-        width: 1300px;
+        width: 90%; 
         height: 70vh;
         display: flex;
         align-items: center;
@@ -565,9 +565,6 @@ section {
     }
 }
 
-.slick-list {
-    width: 1300px;
-}
 
 .slick-track {
     display: flex;
