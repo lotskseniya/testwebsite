@@ -557,7 +557,7 @@ section {
 
                 .autoplay-img {
                     max-width: 70%;
-                    ;
+                    
                 }
             }
 
@@ -565,6 +565,14 @@ section {
     }
 }
 
+.gallery .gallery-wrap .autoplay div .autoplay-img {
+    max-width: 400px;
+    min-width: 70px;
+  }
+  
+  .slick-list {
+    max-width: 1000px;
+  }
 
 .slick-track {
     display: flex;
@@ -750,6 +758,20 @@ section {
       }
     }
   } 
+
+  @media (max-width: 390px) {
+    .slick-list {
+        max-width: 200px;
+      }
+
+      .slick-prev {
+          margin-left: -20px;
+      }
+
+      .autoplay-img {
+        width: 60px;
+         }
+    }       
 
 
   
