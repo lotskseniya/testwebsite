@@ -16,7 +16,19 @@ $('.autoplay').slick({
     infinite: true,
     speed: 500,
     slide: 'div',
-  }); 
+
+    
+    responsive: [
+        {
+          breakpoint: 520,
+    
+            settings: {
+                slidesToShow: 1,
+               }
+          
+        },
+    ]
+  });  
 
 
 
