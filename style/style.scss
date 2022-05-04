@@ -535,7 +535,11 @@ section {
 
 .gallery {
     background: linear-gradient(347deg, rgba(243, 190, 218, 0.604826) 8%, rgba(239, 226, 243, 0.4) 53%, rgba(208, 201, 242, 0.5) 96%);
-    padding-bottom: 80px;
+    padding: 0 0 80px 16px;
+
+    .header_text {
+        padding-left: 40px;
+    }
 
     .gallery-wrap {
         width: 90%; 
@@ -553,30 +557,29 @@ section {
             align-items: center;
 
             div {
-                margin-left: 30px;
+                justify-content: center;
 
                 .autoplay-img {
-                    max-width: 70%;
-                    
+                    width: 25vw;
+                    align-self: center;
                 }
             }
 
         }
     }
 }
-
-.gallery .gallery-wrap .autoplay div .autoplay-img {
-    max-width: 400px;
-    min-width: 70px;
-  }
-  
   .slick-list {
-    max-width: 1000px;
+      display: flex;
+      flex-wrap: wrap;
+      width: 70vw;
+      align-items: center;
+      margin: 0 10vw 0 10vw;
   }
 
 .slick-track {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .slick-prev, .slick-next{
@@ -585,9 +588,16 @@ section {
     width: 36px;
     border-radius: 12%;
     position: relative;
-    margin-left: 30px;
     background-color: #4754EB;
     border: none;
+}
+
+.slick-prev {
+    margin: 0 2vw 0 3vw;
+}
+
+.slick-next {
+    margin: 0 0 0 -10vw;
 }
 
 .slick-prev::after {
@@ -759,19 +769,44 @@ section {
     }
   } 
 
-  @media (max-width: 390px) {
-    .slick-list {
-        max-width: 200px;
-      }
-
+  @media (max-width: 720px) {
+    
       .slick-prev {
-          margin-left: -20px;
+          margin-left: -5px;
       }
 
-      .autoplay-img {
-        width: 60px;
-         }
-    }       
+       .autoplay-img {
+           width: 20vw;
+           align-self: center;
+           }
+    }   
+    
+    @media (max-width: 520px) {
+      
+        .slick-list {
+            width: 60vw;
+        }
+
+         .autoplay-img {
+             width: 10vw;
+             align-self: center;
+             justify-self:center;
+             }
+      }  
+
+//   @media (max-width: 390px) {
+//     .slick-list {
+//         max-width: 200px;
+//       }
+
+//       .slick-prev {
+//           margin-left: -20px;
+//       }
+
+//       .autoplay-img {
+//         width: 60px;
+//          }
+//     }       
 
 
   

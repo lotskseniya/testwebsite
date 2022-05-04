@@ -567,7 +567,11 @@ section {
 
 .gallery {
   background: linear-gradient(347deg, rgba(243, 190, 218, 0.604826) 8%, rgba(239, 226, 243, 0.4) 53%, rgba(208, 201, 242, 0.5) 96%);
-  padding-bottom: 80px;
+  padding: 0 0 80px 16px;
+}
+
+.gallery .header_text {
+  padding-left: 40px;
 }
 
 .gallery .gallery-wrap {
@@ -593,20 +597,29 @@ section {
 }
 
 .gallery .gallery-wrap .autoplay div {
-  margin-left: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .gallery .gallery-wrap .autoplay div .autoplay-img {
-  max-width: 70%;
-}
-
-.gallery .gallery-wrap .autoplay div .autoplay-img {
-  max-width: 400px;
-  min-width: 70px;
+  width: 25vw;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .slick-list {
-  max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 70vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 10vw 0 10vw;
 }
 
 .slick-track {
@@ -616,6 +629,9 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .slick-prev, .slick-next {
@@ -624,9 +640,16 @@ section {
   width: 36px;
   border-radius: 12%;
   position: relative;
-  margin-left: 30px;
   background-color: #4754EB;
   border: none;
+}
+
+.slick-prev {
+  margin: 0 2vw 0 3vw;
+}
+
+.slick-next {
+  margin: 0 0 0 -10vw;
 }
 
 .slick-prev::after {
@@ -800,15 +823,29 @@ section {
   }
 }
 
-@media (max-width: 390px) {
-  .slick-list {
-    max-width: 200px;
-  }
+@media (max-width: 720px) {
   .slick-prev {
-    margin-left: -20px;
+    margin-left: -5px;
   }
   .autoplay-img {
-    width: 60px;
+    width: 20vw;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .slick-list {
+    width: 60vw;
+  }
+  .autoplay-img {
+    width: 10vw;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
