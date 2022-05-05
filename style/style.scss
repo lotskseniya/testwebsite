@@ -445,7 +445,13 @@ section {
     border-radius: 16px;
     background: #FAEAF0;
     max-width: 628px;
+    // min-width: 150px;
     max-height: fit-content
+}
+
+.review_wrap {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .review_header {
@@ -494,28 +500,28 @@ section {
     margin-left: 24px;
 }
 
-.rev1 {
-    margin-top: 96px;
-    z-index: 0;
-}
+// .rev1 {
+//     margin-top: 2vw;
+//     z-index: 0;
+// }
 
-.rev2 {
-    margin-top: 24px;
-    margin-left: 219px;
-    z-index: 1;
-}
+// .rev2 {
+//     margin-top: -2vw;
+//     margin-left: 21vw;
+//     z-index: 1;
+// }
 
-.rev3 {
-    top: -432px;
-    margin-left: 652px;
-    z-index: 2;
-}
+// .rev3 {
+//     margin-top: -2vw;
+//     margin-left: 31vw;
+//     z-index: 2;
+// }
 
-.rev4 {
-    top: -950px;
-    margin-left: 325px;
-    z-index: 3;
-}
+// .rev4 {
+//     margin-top: -2vw;
+//     margin-left: 41vw;
+//     z-index: 3;
+// }
 
 .kitten_btn {
     width: 274px;

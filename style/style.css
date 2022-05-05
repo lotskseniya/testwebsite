@@ -473,6 +473,14 @@ section {
   max-height: fit-content;
 }
 
+.review_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .review_header {
   padding: 36px 4px;
   display: -webkit-box;
@@ -528,6 +536,7 @@ section {
 .star:first-child {
   margin-left: 24px;
 }
+
 
 .rev1 {
   margin-top: 96px;
