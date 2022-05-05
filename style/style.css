@@ -54,6 +54,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -66,12 +68,14 @@ header {
   color: #4754eb;
   font-size: 18px;
   font-weight: 600;
+  display: inline;
 }
 
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 10px;
 }
 
 .menu ul li {
@@ -584,18 +588,8 @@ section {
 
 .gallery .gallery-wrap {
   width: 90%;
+  margin: auto;
   height: 70vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .gallery .gallery-wrap .autoplay {
@@ -607,17 +601,8 @@ section {
   align-items: center;
 }
 
-.gallery .gallery-wrap .autoplay div {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.gallery .gallery-wrap .autoplay div .autoplay-img {
-  width: 25vw;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+.gallery .gallery-wrap .autoplay .autoplay-img {
+  width: 80%;
 }
 
 .slick-list {
@@ -627,10 +612,10 @@ section {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 70vw;
+  margin: 0 auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 2vw 0 0;
 }
 
 .slick-track {
@@ -640,12 +625,10 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-.slick-prev, .slick-next {
+.slick-prev,
+.slick-next {
   font-size: 0;
   height: 36px;
   width: 36px;
@@ -655,12 +638,8 @@ section {
   border: none;
 }
 
-.slick-prev {
-  margin: 0 2vw 0 3vw;
-}
-
-.slick-next {
-  margin: 0 0 0 -3vw;
+.draggable .slick-list {
+  padding: 0;
 }
 
 .slick-prev::after {
@@ -834,34 +813,19 @@ section {
   }
 }
 
-@media (max-width: 720px) {
-  .slick-prev {
-    margin-left: -5px;
-  }
-  .autoplay-img {
-    width: 20vw;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-  }
-}
-
-@media (max-width: 520px) {
+@media (max-width: 660px) {
   .slick-list {
     width: 60vw;
   }
   .autoplay-img {
-    width: 10vw;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
     -ms-grid-column-align: center;
         justify-self: center;
   }
-}
-
-@media (max-width: 390px) {
-  .slick-prev, .slick-next {
+  .slick-prev,
+  .slick-next {
     font-size: 0;
     height: 18px;
     width: 18px;
@@ -875,6 +839,6 @@ section {
     font-size: 18px;
     right: 3px;
     top: 0px;
-  } 
+  }
 }
 /*# sourceMappingURL=style.css.map */
